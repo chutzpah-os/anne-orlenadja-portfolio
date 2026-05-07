@@ -72,6 +72,53 @@ export const projects: Project[] = [
     year: '2022–2025',
   },
   {
+    slug: 'pre-caju',
+    title: 'Pré-Caju Festival',
+    category: 'Events',
+    tags: ['Festival', 'Event Coverage', 'Video Production', 'Interviews', 'Live Coverage', 'Editing'],
+    description:
+      'Full media production for Pré-Caju, one of the biggest pre-carnival festivals in Sergipe, sponsored by BANESE — Banco do Estado de Sergipe. Responsible for video production, photography, editing, and on-site interviews with bands, revelers, singers, songwriters, and the festival\'s main attractions. The work captured the energy and culture of the event across multiple stages and moments — delivering content that extended the festival\'s reach beyond the venue and brought the experience to audiences online.',
+    coverImage: 'precaju5.jpg',
+    coverPosition: 'center 15%',
+    images: [
+      'precaju5.jpg',
+      'precaju1.jpg',
+      'precaju2.jpg',
+      'precaju3.jpg',
+      'precaju4.jpg',
+      'precaju6.jpg',
+      'precaju7.jpg',
+      'precaju8.jpg',
+    ],
+    videos: [],
+    instagramPosts: [],
+    year: '2023–2024',
+  },
+  {
+    slug: 'expogloria',
+    title: 'ExpoGloria 2025',
+    category: 'Events',
+    tags: ['Government Event', 'Institutional', 'Social Media', 'Event Coverage', 'Content Strategy'],
+    description:
+      'Communications and social media coverage for ExpoGloria 2025, one of the largest promotional and cultural events produced by the Government of Sergipe. Delivered a content strategy and real-time coverage that captured the highlights of the expo — showcasing the state\'s agricultural, cultural, and commercial sectors to a broad public audience. The work combined institutional communication with engaging storytelling, maximizing reach and generating organic engagement throughout the event.',
+    coverImage: 'expogloria-banese.jpeg',
+    images: ['expogloria-banese.jpeg', 'expogloria-banese1.jpeg', 'expogloria-banese2.jpeg'],
+    videos: [],
+    year: '2025',
+  },
+  {
+    slug: 'shopping-praia-sul',
+    title: 'Shopping Praia Sul',
+    category: 'Campaigns',
+    tags: ['Social Media', 'Campaign', 'Community Management', 'Retail', 'Visual Content'],
+    description:
+      'Social media management and campaign strategy for Shopping Praia Sul, located in the Poxim district of Aracaju. Developed the brand\'s content calendar, produced visual materials for seasonal promotions, and managed the community — strengthening the mall\'s relationship with local residents and tenant stores. The strategy focused on promoting events, store offers, and the neighborhood lifestyle in an authentic and engaging way.',
+    coverImage: 'praiasul-11.png',
+    images: ['praiasul-11.png', 'Praia Sul - 12.png', 'Praia Sul - 13.png', 'Praia Sul - 31.png'],
+    videos: [],
+    year: '2022',
+  },
+  {
     slug: 'mitsubishi',
     title: 'Mitsubishi Xingo — Year-End Campaign',
     category: 'Campaigns',
@@ -104,18 +151,6 @@ export const projects: Project[] = [
       'https://www.instagram.com/shoppingpremio/reel/Cx3EVrpOTFQ/',
     ],
     year: '2022–2023',
-  },
-  {
-    slug: 'shopping-praia-sul',
-    title: 'Shopping Praia Sul',
-    category: 'Campaigns',
-    tags: ['Social Media', 'Campaign', 'Community Management', 'Retail', 'Visual Content'],
-    description:
-      'Social media management and campaign strategy for Shopping Praia Sul, located in the Poxim district of Aracaju. Developed the brand\'s content calendar, produced visual materials for seasonal promotions, and managed the community — strengthening the mall\'s relationship with local residents and tenant stores. The strategy focused on promoting events, store offers, and the neighborhood lifestyle in an authentic and engaging way.',
-    coverImage: 'praiasul-11.png',
-    images: ['praiasul-11.png', 'Praia Sul - 12.png', 'Praia Sul - 13.png', 'Praia Sul - 31.png'],
-    videos: [],
-    year: '2022',
   },
   {
     slug: 'sonho-dos-pes',
@@ -208,7 +243,6 @@ export const projects: Project[] = [
   },
 
   // ─── EVENTS ───────────────────────────────────────────────────────────────────
-
   {
     slug: 'events',
     title: 'Events — Weddings & Celebrations',
@@ -231,19 +265,6 @@ export const projects: Project[] = [
     ],
     year: '2022–2024',
   },
-  {
-    slug: 'expogloria',
-    title: 'ExpoGloria 2025',
-    category: 'Events',
-    tags: ['Government Event', 'Institutional', 'Social Media', 'Event Coverage', 'Content Strategy'],
-    description:
-      'Communications and social media coverage for ExpoGloria 2025, one of the largest promotional and cultural events produced by the Government of Sergipe. Delivered a content strategy and real-time coverage that captured the highlights of the expo — showcasing the state\'s agricultural, cultural, and commercial sectors to a broad public audience. The work combined institutional communication with engaging storytelling, maximizing reach and generating organic engagement throughout the event.',
-    coverImage: 'expogloria-banese.jpeg',
-    images: ['expogloria-banese.jpeg', 'expogloria-banese1.jpeg', 'expogloria-banese2.jpeg'],
-    videos: [],
-    year: '2025',
-  },
-
   // ─── INSTITUTIONAL ────────────────────────────────────────────────────────────
 
   {
