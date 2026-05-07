@@ -13,7 +13,7 @@ const config: Config = {
         surface2: '#f2f2f2',
         muted: '#767676',
         'muted-2': '#8c8c8c',
-        accent: '#0099ff',
+        accent: '#FFD900',
         yellow: '#FFD900',
         border: 'rgba(0,0,0,0.08)',
         'border-md': 'rgba(0,0,0,0.12)',
