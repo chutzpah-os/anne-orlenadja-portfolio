@@ -313,7 +313,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             key="lightbox"
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-[60] bg-black/92 flex items-center justify-center"
+            className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-md flex items-center justify-center"
             onClick={() => setLightboxIndex(null)}
           >
             <motion.div
