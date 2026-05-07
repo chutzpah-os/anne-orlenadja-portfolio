@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nav-height: 88px;
+  --nav-outer: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: var(--font-tight), 'Inter Tight', system-ui, sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* Reserve space for fixed bottom nav */
+  padding-bottom: calc(var(--nav-height) + var(--nav-outer) * 2);
+}
+
+/* Scroll margin for fixed nav */
+section[id] {
+  scroll-margin-top: 32px;
+}
+
+/* Text selection */
+::selection {
+  background: #FFD900;
+  color: #000;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d5d5d5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8c8c8c;
+}
+
+/* Mark / highlight */
+mark {
+  background: #FFD900;
+  color: #000;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* Yellow underline utility */
+.underline-yellow {
+  text-decoration: underline;
+  text-decoration-color: #FFD900;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 3px;
+}
+
+
+/* Noise overlay on hero - multiply blend */
+.noise-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 200px;
+  mix-blend-mode: multiply;
+  opacity: 0.04;
+}
+
+/* Rotated image hover effect */
+.img-tilt {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-tilt:hover {
+  transform: rotate(0deg) scale(1.03) !important;
+}
+
+/* Video element */
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Project card hover */
+.project-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.project-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Pill button */
+.pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-tight);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.pill-btn-dark {
+  background: #000;
+  color: #fff;
+}
+.pill-btn-dark:hover {
+  background: #222;
+}
+
+.pill-btn-ghost {
+  background: transparent;
+  color: #000;
+}
+.pill-btn-ghost:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
