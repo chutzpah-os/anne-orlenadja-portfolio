@@ -136,6 +136,14 @@ export default function About() {
               >
                 Email ↗
               </a>
+              <a
+                href="https://www.youtube.com/@anneorlenadja"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pill-btn bg-surface text-black/70 hover:text-black hover:bg-black/8 text-sm"
+              >
+                YouTube ↗
+              </a>
             </motion.div>
           </div>
         </div>
