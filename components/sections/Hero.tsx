@@ -172,22 +172,20 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 1.4 }}
             className="mt-14 pt-8 border-t border-black/8"
           >
-            <p className="font-tight text-muted text-xs font-medium tracking-widest uppercase mb-4">
+            <p className="font-tight text-muted text-xs font-medium tracking-widest uppercase mb-4 text-center">
               Brands worked with
             </p>
-            <div className="flex flex-wrap gap-x-8 gap-y-2">
-              {[
-                'BANESE',
-                'Viali',
-                'Shopping Praia Sul',
-                'Casse',
-                'Grupo Gabillaud',
-                'Shopping Premium',
-              ].map((brand) => (
-                <span key={brand} className="font-tight text-sm text-black/40 font-medium">
-                  {brand}
-                </span>
-              ))}
+            <div className="overflow-hidden">
+              <div className="marquee-track">
+                {[
+                  'BANESE', 'Viali', 'Shopping Praia Sul', 'Casse', 'Grupo Gabillaud', 'Shopping Premium',
+                  'BANESE', 'Viali', 'Shopping Praia Sul', 'Casse', 'Grupo Gabillaud', 'Shopping Premium',
+                ].map((brand, i) => (
+                  <span key={i} className="font-tight text-sm text-black/40 font-medium pr-12">
+                    {brand}
+                  </span>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>
