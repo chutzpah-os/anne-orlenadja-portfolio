@@ -26,6 +26,14 @@ export default function Footer() {
           >
             WhatsApp
           </a>
+          <a
+            href="https://www.youtube.com/@anneorlenadja"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-tight text-xs text-muted hover:text-black transition-colors duration-200 font-medium"
+          >
+            YouTube
+          </a>
         </div>
       </div>
     </footer>

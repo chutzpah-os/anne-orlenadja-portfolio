@@ -7,7 +7,6 @@ const contactItems = [
   { label: 'Email', value: 'aorlenadja@gmail.com', href: 'mailto:aorlenadja@gmail.com', external: false },
   { label: 'Phone', value: '+55 (79) 99873-3448', href: 'tel:+5579998733448', external: false },
   { label: 'Instagram', value: '@anneorlenadja', href: 'https://instagram.com/anneorlenadja', external: true },
-  { label: 'YouTube', value: '@anneorlenadja', href: 'https://www.youtube.com/@anneorlenadja', external: true },
 ]
 
 const fade = (delay = 0) => ({
