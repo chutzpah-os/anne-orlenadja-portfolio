@@ -204,9 +204,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               {/* Scrollable body */}
               <div
                 ref={scrollRef}
-                className="flex-1 overflow-y-auto overscroll-contain"
+                className="flex-1 min-h-0 overflow-y-auto overscroll-contain"
                 style={{ touchAction: 'pan-y', WebkitOverflowScrolling: 'touch' } as React.CSSProperties}
                 onWheel={e => e.stopPropagation()}
+                onTouchStart={e => e.stopPropagation()}
+                onTouchMove={e => e.stopPropagation()}
               >
                 <div className="px-4 sm:px-10 py-8 max-w-2xl mx-auto w-full">
 
