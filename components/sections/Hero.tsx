@@ -172,7 +172,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 1.4 }}
             className="mt-14 pt-8 border-t border-black/8"
           >
-            <p className="font-tight text-muted text-xs font-medium tracking-widest uppercase mb-4 text-center">
+            <p className="font-caveat text-black/40 text-base mb-4 text-center">
               Brands worked with
             </p>
             <div className="overflow-hidden">
