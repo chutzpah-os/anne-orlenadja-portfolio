@@ -43,7 +43,7 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
               {project.category} · {project.year}
             </span>
             <h3
-              className="font-tight font-bold text-black group-hover:text-accent transition-colors duration-300 leading-tight"
+              className="font-tight font-bold text-black transition-colors duration-300 leading-tight"
               style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)', letterSpacing: '-0.02em' }}
             >
               {project.title}
@@ -54,7 +54,7 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
               ))}
             </div>
             <div className="mt-5">
-              <span className="inline-flex items-center gap-2 font-tight text-sm font-medium text-black/60 group-hover:text-accent group-hover:gap-3 transition-all duration-300">
+              <span className="inline-flex items-center gap-2 font-tight text-sm font-medium text-black/60 group-hover:text-black group-hover:gap-3 transition-all duration-300">
                 View project <span className="text-base">→</span>
               </span>
             </div>
