@@ -65,13 +65,28 @@ function VideoCard({ src, scrollRoot }: { src: string; scrollRoot: React.RefObje
   )
 }
 
-/* ── Instagram post/reel embed ── */
+/* ── Instagram post/reel embed (lazy: only loads iframe when in viewport) ── */
 function InstagramPost({ url, scrollRoot }: { url: string; scrollRoot: React.RefObject<HTMLDivElement> }) {
   const embedUrl = getInstagramEmbedUrl(url)
   const isReel = url.includes('/reel/')
+  const [inView, setInView] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const root = scrollRoot.current ?? undefined
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setInView(true); observer.disconnect() } },
+      { root, rootMargin: '200px' }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [scrollRoot])
 
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, y: 36 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ root: scrollRoot, once: true, margin: '-48px' }}
@@ -80,18 +95,17 @@ function InstagramPost({ url, scrollRoot }: { url: string; scrollRoot: React.Ref
     >
       <div
         className="overflow-hidden rounded-2xl bg-white w-full"
-        style={isReel
-          ? { maxWidth: 360, height: 680 }
-          : { height: 560 }
-        }
+        style={isReel ? { maxWidth: 360, height: 680 } : { height: 560 }}
       >
-        <iframe
-          src={embedUrl}
-          className="w-full h-full border-0"
-          scrolling="no"
-          allowTransparency
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        />
+        {inView && (
+          <iframe
+            src={embedUrl}
+            className="w-full h-full border-0"
+            scrolling="no"
+            allowTransparency
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          />
+        )}
       </div>
     </motion.div>
   )
