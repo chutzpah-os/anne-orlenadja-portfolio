@@ -19,14 +19,30 @@ const caveat = Caveat({
 })
 
 export const metadata: Metadata = {
-  title: 'Anne Orlenadja — Social Media Manager & Videomaker',
+  title: 'Anne Orlenadja — Marketing & Branding Analyst',
   description:
     'Portfolio of Anne Orlenadja — Social Media Manager and Videomaker based in Aracaju, Brazil. Growth and visibility for your brand.',
   keywords: ['social media', 'videomaker', 'content creation', 'Aracaju', 'Brazil', 'marketing'],
   openGraph: {
-    title: 'Anne Orlenadja — Social Media Manager & Videomaker',
+    title: 'Anne Orlenadja — Marketing & Branding Analyst',
     description: 'Growth and visibility for your brand.',
     type: 'website',
+    url: 'https://anneorlenadja.vercel.app',
+    siteName: 'Anne Orlenadja',
+    images: [
+      {
+        url: 'https://anneorlenadja.vercel.app/assets/anneorlenadja.png',
+        width: 1200,
+        height: 630,
+        alt: 'Anne Orlenadja — Marketing & Branding Analyst',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Anne Orlenadja — Marketing & Branding Analyst',
+    description: 'Growth and visibility for your brand.',
+    images: ['https://anneorlenadja.vercel.app/assets/anneorlenadja.png'],
   },
 }
 
