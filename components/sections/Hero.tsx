@@ -177,14 +177,12 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap gap-x-8 gap-y-2">
               {[
-                'Mitsubishi',
-                'Shopping Premium',
-                'Shopping Praia Sul',
-                'Viali',
                 'BANESE',
-                'SAMU',
-                'Google Dev Group',
-                'Polícia Militar',
+                'Viali',
+                'Shopping Praia Sul',
+                'Casse',
+                'Grupo Gabillaud',
+                'Shopping Premium',
               ].map((brand) => (
                 <span key={brand} className="font-tight text-sm text-black/40 font-medium">
                   {brand}
