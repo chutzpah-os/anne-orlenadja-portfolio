@@ -9,28 +9,28 @@ const steps = [
     title: 'Discovery',
     description:
       'Deep dive into your brand, target audience, market positioning, and competitive landscape. This research phase builds the strategic foundation — ensuring every creative decision is grounded in real insight.',
-    color: '#FFD900',
+    color: '#D4775A',
   },
   {
     number: '02',
     title: 'Strategy',
     description:
       'With insights in hand, I craft a tailored content strategy — defining visual language, tone of voice, content pillars, campaign concepts, and publishing cadence. Every brand gets a unique blueprint.',
-    color: '#0099ff',
+    color: '#D4775A',
   },
   {
     number: '03',
     title: 'Creation',
     description:
       'The execution phase: designing visuals, writing copy, filming and editing videos. Every piece is crafted to capture attention and communicate your brand story with clarity and genuine impact.',
-    color: '#FFD900',
+    color: '#D4775A',
   },
   {
     number: '04',
     title: 'Analysis',
     description:
       'After publishing, I track performance metrics — reach, engagement, conversions, sentiment — and use these insights to continuously refine the strategy and compound results over time.',
-    color: '#0099ff',
+    color: '#D4775A',
   },
 ]
 
@@ -44,15 +44,16 @@ export default function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="font-tight text-xs text-muted font-medium tracking-widest uppercase mb-5"
+          className="font-caveat text-lg mb-5"
+          style={{ color: '#D4775A' }}
         >
           Process
         </motion.p>
         <AnimatedText
           text="How I work with brands."
           tag="h2"
-          className="font-tight font-bold text-black mb-14"
-          style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.03em', lineHeight: 1 }}
+          className="font-cormorant font-bold text-black mb-14"
+          style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.01em', lineHeight: 1 }}
         />
 
         {/* Steps grid — 2 columns on desktop */}
@@ -79,8 +80,8 @@ export default function Process() {
                 {step.number}
               </div>
               <h3
-                className="font-tight font-bold text-black mb-4 leading-tight"
-                style={{ fontSize: '1.35rem', letterSpacing: '-0.02em' }}
+                className="font-cormorant font-bold text-black mb-4 leading-tight"
+                style={{ fontSize: '1.5rem', letterSpacing: '-0.01em' }}
               >
                 {step.title}
               </h3>
@@ -97,22 +98,22 @@ export default function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-          className="mt-10 bg-black rounded-[24px] p-8 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+          className="mt-10 bg-[#f2f2f2] rounded-[24px] p-8 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
         >
           <div>
             <h3
-              className="font-tight font-bold text-white leading-tight mb-2"
-              style={{ fontSize: 'clamp(1.2rem, 3vw, 1.75rem)', letterSpacing: '-0.02em' }}
+              className="font-cormorant font-bold text-black leading-tight mb-2"
+              style={{ fontSize: 'clamp(1.3rem, 3vw, 1.9rem)', letterSpacing: '-0.01em' }}
             >
               Ready to grow your brand?
             </h3>
-            <p className="font-tight text-white/50 text-sm font-medium">
+            <p className="font-tight text-black/50 text-sm font-medium">
               Let&apos;s craft something remarkable together.
             </p>
           </div>
           <a
             href="mailto:aorlenadja@gmail.com"
-            className="shrink-0 pill-btn bg-[#FFD900] text-black hover:bg-yellow-300 text-sm font-bold"
+            className="shrink-0 pill-btn bg-accent text-white hover:opacity-85 text-sm font-bold"
             style={{ padding: '12px 28px' }}
           >
             Start a project →

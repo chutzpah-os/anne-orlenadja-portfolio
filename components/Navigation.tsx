@@ -38,7 +38,7 @@ export default function Navigation() {
             {/* Logo / Name */}
             <Link
               href="/"
-              className="font-caveat text-xl font-bold text-black hover:text-accent transition-colors duration-200 shrink-0"
+              className="font-caveat text-xl font-bold hover:opacity-80 transition-opacity duration-200 shrink-0" style={{ color: '#D4775A' }}
             >
               Anne Orlenadja
             </Link>
@@ -60,7 +60,7 @@ export default function Navigation() {
             <div className="flex items-center gap-2">
               <a
                 href="mailto:aorlenadja@gmail.com"
-                className="hidden sm:flex pill-btn pill-btn-dark text-[13px]"
+                className="hidden sm:flex pill-btn text-[13px] bg-accent text-white hover:opacity-85 transition-opacity"
               >
                 Start Project →
               </a>
@@ -121,7 +121,7 @@ export default function Navigation() {
               <div className="pt-3 mt-3 border-t border-black/8">
                 <a
                   href="mailto:aorlenadja@gmail.com"
-                  className="flex pill-btn pill-btn-dark w-full justify-center text-sm"
+                  className="flex pill-btn w-full justify-center text-sm bg-accent text-white hover:opacity-85 transition-opacity"
                 >
                   Start Project →
                 </a>

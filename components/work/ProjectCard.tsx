@@ -39,12 +39,12 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
 
           {/* Left: text info */}
           <div className="sm:w-1/2">
-            <span className="font-tight text-xs text-muted font-medium tracking-widest uppercase block mb-2">
+            <span className="font-cormorant text-sm text-muted font-medium block mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
               {project.category} · {project.year}
             </span>
             <h3
-              className="font-tight font-bold text-black transition-colors duration-300 leading-tight"
-              style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)', letterSpacing: '-0.02em' }}
+              className="font-cormorant font-bold text-black transition-colors duration-300 leading-tight"
+              style={{ fontSize: 'clamp(1rem, 2vw, 1.3rem)', letterSpacing: '-0.01em' }}
             >
               {project.title}
             </h3>
@@ -54,7 +54,7 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
               ))}
             </div>
             <div className="mt-5">
-              <span className="inline-flex items-center gap-2 font-tight text-sm font-medium text-black/60 group-hover:text-black group-hover:gap-3 transition-all duration-300">
+              <span className="inline-flex items-center gap-2 font-cormorant text-base font-medium text-black/60 group-hover:text-black group-hover:gap-3 transition-all duration-300">
                 View project <span className="text-base">→</span>
               </span>
             </div>

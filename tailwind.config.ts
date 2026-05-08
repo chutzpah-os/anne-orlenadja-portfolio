@@ -13,7 +13,7 @@ const config: Config = {
         surface2: '#f2f2f2',
         muted: '#767676',
         'muted-2': '#8c8c8c',
-        accent: '#FFD900',
+        accent: '#D4775A',
         yellow: '#FFD900',
         border: 'rgba(0,0,0,0.08)',
         'border-md': 'rgba(0,0,0,0.12)',
@@ -21,6 +21,7 @@ const config: Config = {
       fontFamily: {
         tight: ['var(--font-tight)', 'system-ui', 'sans-serif'],
         caveat: ['var(--font-caveat)', 'cursive'],
+        cormorant: ['var(--font-cormorant)', 'Georgia', 'serif'],
       },
       borderRadius: {
         '4xl': '2rem',

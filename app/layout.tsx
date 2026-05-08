@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter_Tight, Caveat } from 'next/font/google'
+import { Inter_Tight, Caveat, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import SmoothScroll from '@/components/SmoothScroll'
@@ -9,6 +9,13 @@ const interTight = Inter_Tight({
   variable: '--font-tight',
   display: 'swap',
   weight: ['400', '500', '600', '700'],
+})
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-cormorant',
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800', '900'],
 })
 
 const caveat = Caveat({
@@ -48,7 +55,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${interTight.variable} ${caveat.variable}`}>
+    <html lang="en" className={`${interTight.variable} ${caveat.variable} ${playfair.variable}`}>
       <body>
         <SmoothScroll>
           {children}

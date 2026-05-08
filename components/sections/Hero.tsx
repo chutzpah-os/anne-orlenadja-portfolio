@@ -45,11 +45,11 @@ export default function Hero() {
                   initial={{ y: '110%' }}
                   animate={{ y: 0 }}
                   transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.35 }}
-                  className="font-tight font-700 leading-[0.9] text-black"
+                  className="font-cormorant leading-[0.9] text-black"
                   style={{
                     fontSize: 'clamp(3rem, 9vw, 7.5rem)',
-                    fontWeight: 700,
-                    letterSpacing: '-0.03em',
+                    fontWeight: 600,
+                    letterSpacing: '-0.01em',
                   }}
                 >
                   Growth and
@@ -60,11 +60,11 @@ export default function Hero() {
                   initial={{ y: '110%' }}
                   animate={{ y: 0 }}
                   transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
-                  className="font-tight font-700 leading-[0.9] text-black"
+                  className="font-cormorant leading-[0.9] text-black"
                   style={{
                     fontSize: 'clamp(3rem, 9vw, 7.5rem)',
-                    fontWeight: 700,
-                    letterSpacing: '-0.03em',
+                    fontWeight: 600,
+                    letterSpacing: '-0.01em',
                   }}
                 >
                   <mark>Visibility</mark>
@@ -75,11 +75,11 @@ export default function Hero() {
                   initial={{ y: '110%' }}
                   animate={{ y: 0 }}
                   transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.65 }}
-                  className="font-tight font-700 leading-[0.9] text-black"
+                  className="font-cormorant leading-[0.9] text-black"
                   style={{
                     fontSize: 'clamp(3rem, 9vw, 7.5rem)',
-                    fontWeight: 700,
-                    letterSpacing: '-0.03em',
+                    fontWeight: 600,
+                    letterSpacing: '-0.01em',
                   }}
                 >
                   for your Brand.
@@ -93,11 +93,11 @@ export default function Hero() {
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.9 }}
                 className="flex flex-col sm:flex-row sm:items-center gap-4"
               >
-                <p className="font-tight text-muted text-base font-medium">
+                <p className="text-muted text-lg font-medium" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   Marketing & Branding Analyst
                 </p>
                 <div className="flex gap-3">
-                  <a href="#work" className="pill-btn pill-btn-dark text-sm">
+                  <a href="#work" className="pill-btn text-sm bg-accent text-white hover:opacity-85 transition-opacity">
                     View Work ↓
                   </a>
                   <a
@@ -172,7 +172,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 1.4 }}
             className="mt-14 pt-8 border-t border-black/8"
           >
-            <p className="font-caveat text-black/40 text-2xl mb-4 text-center">
+            <p className="font-caveat text-2xl mb-4 text-center" style={{ color: '#D4775A' }}>
               Brands worked with
             </p>
             <div className="overflow-hidden">

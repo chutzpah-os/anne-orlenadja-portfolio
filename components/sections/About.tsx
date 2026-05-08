@@ -35,7 +35,8 @@ export default function About() {
         {/* Section label */}
         <motion.p
           {...fade()}
-          className="font-tight text-xs text-muted font-medium tracking-widest uppercase mb-10"
+          className="font-caveat text-lg mb-10"
+          style={{ color: '#D4775A' }}
         >
           About
         </motion.p>
@@ -88,8 +89,8 @@ export default function About() {
             <AnimatedText
               text="Creative professional building authentic brand narratives."
               tag="h2"
-              className="font-tight font-bold text-black leading-tight mb-8"
-              style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.5rem)', letterSpacing: '-0.02em' }}
+              className="font-cormorant font-bold text-black leading-tight mb-8"
+              style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.5rem)', letterSpacing: '-0.01em' }}
             />
 
             <motion.div {...fade(0.2)} className="space-y-5 font-tight text-base text-black/65 leading-relaxed font-medium">
@@ -113,7 +114,7 @@ export default function About() {
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="font-tight text-xs font-medium px-3 py-1.5 rounded-full bg-surface text-black/70 hover:bg-black hover:text-white transition-all duration-200"
+                  className="font-tight text-xs font-medium px-3 py-1.5 rounded-full bg-surface text-black/70 hover:bg-accent hover:text-white transition-all duration-200"
                 >
                   {skill}
                 </span>

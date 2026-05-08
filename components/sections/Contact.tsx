@@ -21,7 +21,7 @@ export default function Contact() {
     <section id="contact" className="bg-white py-20 sm:py-28">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
         {/* Label */}
-        <motion.p {...fade()} className="font-tight text-xs text-muted font-medium tracking-widest uppercase mb-5">
+        <motion.p {...fade()} className="font-caveat text-lg mb-5" style={{ color: '#D4775A' }}>
           Contact
         </motion.p>
 
@@ -29,8 +29,8 @@ export default function Contact() {
         <AnimatedText
           text="Let's create something remarkable."
           tag="h2"
-          className="font-tight font-bold text-black mb-16 max-w-3xl"
-          style={{ fontSize: 'clamp(2.2rem, 6vw, 5rem)', letterSpacing: '-0.03em', lineHeight: 0.92 }}
+          className="font-cormorant font-bold text-black mb-16 max-w-3xl"
+          style={{ fontSize: 'clamp(2.2rem, 6vw, 5rem)', letterSpacing: '-0.01em', lineHeight: 0.92 }}
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
@@ -45,7 +45,7 @@ export default function Contact() {
                   href={item.href}
                   target={item.external ? '_blank' : undefined}
                   rel={item.external ? 'noopener noreferrer' : undefined}
-                  className="font-tight text-lg font-bold text-black hover:text-yellow transition-colors duration-200"
+                  className="font-tight text-lg font-bold text-black hover:text-accent transition-colors duration-200"
                   style={{ letterSpacing: '-0.01em' }}
                 >
                   {item.value}
@@ -57,11 +57,11 @@ export default function Contact() {
           {/* CTA card */}
           <motion.div
             {...fade(0.3)}
-            className="bg-[#FFD900] rounded-[24px] p-8 sm:p-10"
+            className="bg-[#f2f2f2] rounded-[24px] p-8 sm:p-10"
           >
             <h3
-              className="font-tight font-bold text-black leading-tight mb-3"
-              style={{ fontSize: 'clamp(1.3rem, 3vw, 2rem)', letterSpacing: '-0.02em' }}
+              className="font-cormorant font-bold text-black leading-tight mb-3"
+              style={{ fontSize: 'clamp(1.4rem, 3vw, 2.1rem)', letterSpacing: '-0.01em' }}
             >
               Ready to start?
             </h3>
@@ -70,7 +70,7 @@ export default function Contact() {
             </p>
             <a
               href="mailto:aorlenadja@gmail.com"
-              className="pill-btn pill-btn-dark text-sm font-bold"
+              className="pill-btn bg-accent text-white hover:opacity-85 transition-opacity text-sm font-bold"
               style={{ padding: '12px 28px' }}
             >
               Send a message →

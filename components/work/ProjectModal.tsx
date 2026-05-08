@@ -186,7 +186,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   </span>
                   <h2
                     className="font-tight font-bold text-black leading-tight"
-                    style={{ fontSize: 'clamp(1.1rem, 2.5vw, 1.6rem)', letterSpacing: '-0.02em' }}
+                    style={{ fontSize: 'clamp(1rem, 2vw, 1.3rem)', letterSpacing: '-0.02em' }}
                   >
                     {project.title}
                   </h2>

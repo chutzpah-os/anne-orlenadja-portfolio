@@ -41,7 +41,7 @@ section[id] {
 
 /* Text selection */
 ::selection {
-  background: #FFD900;
+  background: #D4775A;
   color: #000;
 }
 
@@ -76,7 +76,7 @@ section[id] {
 
 /* Mark / highlight */
 mark {
-  background: #FFD900;
+  background: #D4775A;
   color: #000;
   border-radius: 2px;
   padding: 0 2px;
@@ -85,7 +85,7 @@ mark {
 /* Yellow underline utility */
 .underline-yellow {
   text-decoration: underline;
-  text-decoration-color: #FFD900;
+  text-decoration-color: #D4775A;
   text-underline-offset: 4px;
   text-decoration-thickness: 3px;
 }
