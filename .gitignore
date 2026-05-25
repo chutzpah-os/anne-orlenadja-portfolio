@@ -34,3 +34,5 @@ next-env.d.ts
 
 # duplicate assets at root (served from public/assets/)
 /assets
+
+CLAUDE.md
