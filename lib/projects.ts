@@ -63,7 +63,7 @@ export const projects: Project[] = [
     tags: ['Brand Strategy', 'Social Media Management', 'Visual Identity', 'Content Calendar', 'Community'],
     description:
       'Long-term brand strategy and social media management for Casse — building and sustaining a distinctive digital presence aligned with the brand\'s core identity. Developed the content calendar, refined the visual language for digital channels, managed the community, and produced campaign content across all formats. The work focused on organic growth through authentic storytelling and a visually cohesive feed that consistently communicated the brand\'s values over time.',
-    coverImage: 'cassee.png',
+    coverImage: 'capacasse.jpeg',
     images: ['cassee.png'],
     videos: [],
     instagramPosts: [
