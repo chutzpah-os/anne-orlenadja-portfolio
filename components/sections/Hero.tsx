@@ -16,29 +16,13 @@ export default function Hero() {
         aria-hidden
       />
 
-      {/* Content: fills 100vh, content at bottom */}
-      <div className="relative z-10 flex flex-col flex-1 min-h-screen">
-        {/* Top spacer */}
-        <div className="flex-1" />
-
-        {/* Main content — bottom aligned */}
-        <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 pb-10">
+      {/* Content: fills 100vh, centered */}
+      <div className="relative z-10 flex flex-col flex-1 min-h-screen justify-center">
+        {/* Main content */}
+        <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 py-10">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 lg:gap-6">
             {/* Left: headline */}
             <div className="lg:w-[55%]">
-              {/* Tag */}
-              <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-                className="flex items-center gap-3 mb-6"
-              >
-                <span className="inline-flex items-center gap-2 bg-surface text-black/60 text-xs font-tight font-medium px-3 py-1.5 rounded-full">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  @anneorlenadja · Available
-                </span>
-              </motion.div>
-
               {/* Headline — large editorial */}
               <div className="overflow-hidden mb-3">
                 <motion.h1
@@ -47,7 +31,7 @@ export default function Hero() {
                   transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.35 }}
                   className="font-cormorant leading-[0.9] text-black"
                   style={{
-                    fontSize: 'clamp(3rem, 9vw, 7.5rem)',
+                    fontSize: 'clamp(2.4rem, 7vw, 5.8rem)',
                     fontWeight: 600,
                     letterSpacing: '-0.01em',
                   }}
@@ -62,27 +46,27 @@ export default function Hero() {
                   transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
                   className="font-cormorant leading-[0.9] text-black"
                   style={{
-                    fontSize: 'clamp(3rem, 9vw, 7.5rem)',
+                    fontSize: 'clamp(2.4rem, 7vw, 5.8rem)',
                     fontWeight: 600,
                     letterSpacing: '-0.01em',
                   }}
                 >
-                  <mark>Visibility</mark>
+                  <mark>Visibility</mark> for
                 </motion.h1>
               </div>
-              <div className="overflow-hidden mb-8">
+              <div className="overflow-hidden pt-3 mb-8">
                 <motion.h1
                   initial={{ y: '110%' }}
                   animate={{ y: 0 }}
                   transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.65 }}
                   className="font-cormorant leading-[0.9] text-black"
                   style={{
-                    fontSize: 'clamp(3rem, 9vw, 7.5rem)',
+                    fontSize: 'clamp(2.4rem, 7vw, 5.8rem)',
                     fontWeight: 600,
                     letterSpacing: '-0.01em',
                   }}
                 >
-                  for your Brand.
+                  your Brand.
                 </motion.h1>
               </div>
 
@@ -91,18 +75,18 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.9 }}
-                className="flex flex-col sm:flex-row sm:items-center gap-4"
+                className="flex flex-col gap-4"
               >
                 <p className="text-muted text-lg font-medium" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   Marketing & Branding Analyst
                 </p>
                 <div className="flex gap-3">
-                  <a href="#work" className="pill-btn text-sm bg-accent text-white hover:opacity-85 transition-opacity">
+                  <a href="#work" className="pill-btn text-sm bg-accent text-white hover:opacity-85 transition-opacity w-fit">
                     View Work ↓
                   </a>
                   <a
                     href="mailto:aorlenadja@gmail.com"
-                    className="pill-btn pill-btn-ghost text-sm border border-black/10"
+                    className="pill-btn pill-btn-ghost text-sm border border-black/10 w-fit"
                   >
                     Contact
                   </a>
@@ -115,12 +99,25 @@ export default function Hero() {
               initial={{ opacity: 0, x: 20, rotate: 3 }}
               animate={{ opacity: 1, x: 0, rotate: 2 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.25 }}
-              className="lg:w-[38%] relative w-[72%] sm:w-[55%] mx-auto lg:mx-0"
+              className="lg:w-[38%] relative w-[58%] sm:w-[45%] mx-auto lg:mx-0"
             >
               <div
                 className="relative overflow-hidden bg-surface"
-                style={{ borderRadius: '24px', aspectRatio: '4/5', maxHeight: 'min(480px, 60vh)' }}
+                style={{ borderRadius: '24px', aspectRatio: '4/5', maxHeight: 'min(380px, 50vh)' }}
               >
+                {/* Available tag — top of image */}
+                <motion.div
+                  initial={{ opacity: 0, y: -8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.9 }}
+                  className="absolute top-3 left-3 z-10"
+                >
+                  <span className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm text-black/70 text-xs font-tight font-medium px-3 py-1.5 rounded-full shadow-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    @anneorlenadja · Available
+                  </span>
+                </motion.div>
+
                 <Image
                   src="/assets/anneorlenadja.png"
                   alt="Anne Orlenadja"
@@ -144,7 +141,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.2 }}
-                className="absolute -bottom-4 -left-4 bg-white rounded-2xl px-4 py-3 shadow-[0_4px_20px_rgba(0,0,0,0.1)] flex gap-6"
+                className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 bg-white rounded-xl sm:rounded-2xl px-3 py-2 sm:px-4 sm:py-3 shadow-[0_4px_20px_rgba(0,0,0,0.1)] flex gap-3 sm:gap-6"
               >
                 {[
                   { n: '6+', l: 'Years' },
@@ -153,8 +150,8 @@ export default function Hero() {
                 ].map((s) => (
                   <div key={s.l} className="text-center">
                     <div
-                      className="font-tight font-bold text-black leading-none"
-                      style={{ fontSize: '1.25rem', letterSpacing: '-0.02em' }}
+                      className="font-tight font-bold leading-none"
+                      style={{ fontSize: 'clamp(0.9rem, 3vw, 1.25rem)', letterSpacing: '-0.02em', color: '#D4775A' }}
                     >
                       {s.n}
                     </div>
@@ -178,8 +175,8 @@ export default function Hero() {
             <div className="overflow-hidden">
               <div className="marquee-track">
                 {[
-                  'BANESE', 'Viali', 'Shopping Praia Sul', 'Casse', 'Grupo Gabillaud', 'Shopping Premium',
-                  'BANESE', 'Viali', 'Shopping Praia Sul', 'Casse', 'Grupo Gabillaud', 'Shopping Premium',
+                  'BANESE', 'Viali', 'Shopping Praia Sul', 'Casse', 'Grupo Gabillaud', 'Shopping Prêmio',
+                  'BANESE', 'Viali', 'Shopping Praia Sul', 'Casse', 'Grupo Gabillaud', 'Shopping Prêmio',
                 ].map((brand, i) => (
                   <span key={i} className="font-tight text-sm text-black/40 font-medium pr-12">
                     {brand}

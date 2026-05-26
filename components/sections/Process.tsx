@@ -65,14 +65,14 @@ export default function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: i * 0.1 }}
-              className="bg-surface rounded-[24px] p-8"
-              style={{ minHeight: 240 }}
+              className="bg-surface rounded-[20px] sm:rounded-[24px] p-5 sm:p-8"
+              style={{ minHeight: 'auto' }}
             >
               {/* Number */}
               <div
                 className="font-tight font-bold leading-none mb-6"
                 style={{
-                  fontSize: '3rem',
+                  fontSize: 'clamp(2rem, 6vw, 3rem)',
                   letterSpacing: '-0.04em',
                   color: step.color,
                 }}
@@ -98,7 +98,7 @@ export default function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-          className="mt-10 bg-[#f2f2f2] rounded-[24px] p-8 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+          className="mt-10 bg-[#f2f2f2] rounded-[20px] sm:rounded-[24px] p-6 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 sm:gap-6"
         >
           <div>
             <h3

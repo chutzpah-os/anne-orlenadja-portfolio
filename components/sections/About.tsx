@@ -61,7 +61,7 @@ export default function About() {
             </div>
 
             {/* Stats row */}
-            <div className="grid grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-4">
               {[
                 { n: '6+', l: 'Years Experience' },
                 { n: '20+', l: 'Brands Served' },
@@ -70,15 +70,15 @@ export default function About() {
                 <motion.div
                   key={s.l}
                   {...fade(i * 0.08)}
-                  className="bg-surface rounded-[24px] p-5 text-center"
+                  className="bg-surface rounded-[16px] sm:rounded-[24px] p-3 sm:p-5 text-center"
                 >
                   <div
-                    className="font-tight font-bold text-black leading-none"
-                    style={{ fontSize: '1.75rem', letterSpacing: '-0.03em' }}
+                    className="font-tight font-bold leading-none"
+                    style={{ fontSize: 'clamp(1.1rem, 4vw, 1.75rem)', letterSpacing: '-0.03em', color: '#D4775A' }}
                   >
                     {s.n}
                   </div>
-                  <div className="font-tight text-xs text-muted mt-1">{s.l}</div>
+                  <div className="font-tight text-[10px] sm:text-xs text-muted mt-1">{s.l}</div>
                 </motion.div>
               ))}
             </div>
@@ -114,7 +114,8 @@ export default function About() {
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="font-tight text-xs font-medium px-3 py-1.5 rounded-full bg-surface text-black/70 hover:bg-accent hover:text-white transition-all duration-200"
+                  className="font-tight text-xs font-medium px-3 py-1.5 rounded-full bg-surface hover:bg-accent hover:text-white transition-all duration-200"
+                  style={{ color: '#D4775A' }}
                 >
                   {skill}
                 </span>
@@ -122,18 +123,18 @@ export default function About() {
             </motion.div>
 
             {/* Social links */}
-            <motion.div {...fade(0.5)} className="mt-8 flex gap-4">
+            <motion.div {...fade(0.5)} className="mt-8 flex flex-wrap gap-2 sm:gap-4">
               <a
                 href="https://instagram.com/anneorlenadja"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="pill-btn bg-surface text-black/70 hover:text-black hover:bg-black/8 text-sm"
+                className="pill-btn bg-surface hover:opacity-80 transition-opacity text-sm" style={{ color: '#D4775A' }}
               >
                 Instagram ↗
               </a>
               <a
                 href="mailto:aorlenadja@gmail.com"
-                className="pill-btn bg-surface text-black/70 hover:text-black hover:bg-black/8 text-sm"
+                className="pill-btn bg-surface hover:opacity-80 transition-opacity text-sm" style={{ color: '#D4775A' }}
               >
                 Email ↗
               </a>
@@ -141,7 +142,7 @@ export default function About() {
                 href="https://www.youtube.com/@anneorlenadja"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="pill-btn bg-surface text-black/70 hover:text-black hover:bg-black/8 text-sm"
+                className="pill-btn bg-surface hover:opacity-80 transition-opacity text-sm" style={{ color: '#D4775A' }}
               >
                 YouTube ↗
               </a>

@@ -33,7 +33,7 @@ export default function Contact() {
           style={{ fontSize: 'clamp(2.2rem, 6vw, 5rem)', letterSpacing: '-0.01em', lineHeight: 0.92 }}
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
           {/* Contact info */}
           <motion.div {...fade(0.15)} className="space-y-6">
             {contactItems.map((item) => (
@@ -45,8 +45,8 @@ export default function Contact() {
                   href={item.href}
                   target={item.external ? '_blank' : undefined}
                   rel={item.external ? 'noopener noreferrer' : undefined}
-                  className="font-tight text-lg font-bold text-black hover:text-accent transition-colors duration-200"
-                  style={{ letterSpacing: '-0.01em' }}
+                  className="font-tight font-bold hover:opacity-75 transition-opacity duration-200 break-all sm:break-normal"
+                  style={{ color: '#D4775A', letterSpacing: '-0.01em', fontSize: 'clamp(0.95rem, 3vw, 1.125rem)' }}
                 >
                   {item.value}
                 </a>
@@ -57,7 +57,7 @@ export default function Contact() {
           {/* CTA card */}
           <motion.div
             {...fade(0.3)}
-            className="bg-[#f2f2f2] rounded-[24px] p-8 sm:p-10"
+            className="bg-[#f2f2f2] rounded-[20px] sm:rounded-[24px] p-6 sm:p-10"
           >
             <h3
               className="font-cormorant font-bold text-black leading-tight mb-3"

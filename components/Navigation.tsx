@@ -34,11 +34,11 @@ export default function Navigation() {
       >
         {/* Pill container */}
         <div className="max-w-5xl mx-auto">
-          <div className="bg-[#f2f2f2] rounded-[24px] h-[70px] flex items-center justify-between px-6 sm:px-8 shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+          <div className="bg-[#f2f2f2] rounded-[24px] h-[70px] flex items-center justify-between px-4 sm:px-8 shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
             {/* Logo / Name */}
             <Link
               href="/"
-              className="font-caveat text-xl font-bold hover:opacity-80 transition-opacity duration-200 shrink-0" style={{ color: '#D4775A' }}
+              className="font-caveat font-bold hover:opacity-80 transition-opacity duration-200 shrink-0 truncate max-w-[140px] sm:max-w-none" style={{ color: '#D4775A', fontSize: 'clamp(1rem, 4vw, 1.25rem)' }}
             >
               Anne Orlenadja
             </Link>
@@ -49,7 +49,8 @@ export default function Navigation() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="pill-btn pill-btn-ghost text-[13px] text-black/70 hover:text-black"
+                  className="pill-btn pill-btn-ghost text-[13px] hover:opacity-70 transition-opacity"
+                  style={{ color: '#D4775A' }}
                 >
                   {link.label}
                 </a>

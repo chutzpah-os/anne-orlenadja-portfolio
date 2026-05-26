@@ -35,12 +35,12 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: index * 0.04 }}
     >
-      <div className="project-card bg-surface rounded-[24px] overflow-hidden" style={{ padding: '32px' }}>
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+      <div className="project-card bg-surface rounded-[20px] sm:rounded-[24px] overflow-hidden" style={{ padding: 'clamp(18px, 4vw, 32px)' }}>
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6">
 
           {/* Left: text info */}
           <div className="sm:w-1/2">
-            <span className="font-cormorant text-sm text-muted font-medium block mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
+            <span className="font-cormorant text-sm font-medium block mb-2" style={{ fontFamily: 'var(--font-cormorant)', color: '#D4775A' }}>
               {project.roles[0]} · {project.year}
             </span>
             <h3
@@ -55,14 +55,14 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
               ))}
             </div>
             <div className="mt-5">
-              <span className="inline-flex items-center gap-2 font-cormorant text-base font-medium text-black/60 group-hover:text-black group-hover:gap-3 transition-all duration-300">
+              <span className="inline-flex items-center gap-2 font-cormorant text-base font-medium group-hover:gap-3 transition-all duration-300" style={{ color: '#D4775A' }}>
                 View project <span className="text-base">→</span>
               </span>
             </div>
           </div>
 
           {/* Right: tilted cover image or gradient placeholder */}
-          <div className="sm:w-[45%] relative h-[180px] sm:h-[200px]">
+          <div className="sm:w-[45%] relative h-[150px] sm:h-[200px]">
             <motion.div
               className="absolute inset-0 overflow-hidden rounded-xl shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
               style={{ transform: `rotate(${rot}deg)` }}

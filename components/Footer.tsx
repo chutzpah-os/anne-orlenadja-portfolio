@@ -5,7 +5,7 @@ export default function Footer() {
         <p className="font-tight text-xs text-muted font-medium">
           © {new Date().getFullYear()} Anne Orlenadja. All rights reserved.
         </p>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 sm:gap-x-6">
           <a
             href="https://instagram.com/anneorlenadja"
             target="_blank"
