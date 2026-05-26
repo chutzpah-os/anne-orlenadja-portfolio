@@ -205,7 +205,7 @@ export const projects: Project[] = [
     tags: ['Automotive', 'Campaign Concept', 'Video Production', 'Brand Activation', 'Event', 'Social Media Management'],
     description:
       'Year-end campaign for Xingo Mitsubishi, built on the insight that the brand transcends the vehicle — it is about aligning the right car with each person\'s lifestyle, values, and routine. The campaign invited the public to discover their Mitsubishi through a sensory brand experience at the dealership. Deliverables included campaign concept, social media content, video testimonials with real customers, a Year-End Gift Kit, and the Christmas Breakfast event that brought the campaign to life with clients and partners.',
-    coverImage: 'xingoo.png',
+    coverImage: 'capamitsubishi.jpeg',
     images: ['xingo.png', 'xingoo.png', 'xingooo.png'],
     videos: [],
     instagramPosts: [
@@ -253,7 +253,7 @@ export const projects: Project[] = [
     tags: ['Fashion', 'Footwear', 'Campaign', 'Brand Content', 'Social Media', 'Valentine\'s Day'],
     description:
       'Valentine\'s Day campaign for Sonho dos Pes, a footwear brand based in Aracaju. The campaign brought together three expressions of elegance in a single visual story — Sonho dos Pes, Afontes Joias, and Viali — celebrating love in its most beautiful forms. Centered around the Aura dress, a capsule collection created for the occasion, the campaign captured the essence of romance with presence, lightness, and refined aesthetic. A collaboration that turned a seasonal moment into a memorable brand statement.',
-    coverImage: 'sonhosdospes.png',
+    coverImage: 'capasonhodospes.jpeg',
     images: ['sonhosdospes.png'],
     videos: [],
     instagramPosts: [
@@ -273,7 +273,7 @@ export const projects: Project[] = [
     tags: ['Personal Branding', 'Content Creation', 'Video Production', 'Interior Decor', 'Reels', 'Influencer Management'],
     description:
       'Video content production and social media strategy for Daniela Lelis, a specialist in personal image consulting and interior decoration. Produced Reels that showcased her expertise, aesthetic sensibility, and the transformations she delivers to clients — building her authority on Instagram and attracting her ideal audience. The visual language was refined to reflect Daniela\'s own taste: elegant, curated, and distinctly personal.',
-    coverImage: 'danilelis.png',
+    coverImage: 'capadani.jpeg',
     coverPosition: 'center 15%',
     images: ['danilelis.png'],
     videos: [],
@@ -489,6 +489,28 @@ export const projects: Project[] = [
       'https://www.instagram.com/reel/C2xezj4ujQ8/',
     ],
     year: '2022–2024',
+  },
+
+  // ─── CLÍNICA CONDUZIR ────────────────────────────────────────────────────────
+  {
+    slug: 'clinica-conduzir',
+    title: 'Clínica Conduzir',
+    roles: ['Social Media'],
+    skills: ['Social Media Management', 'Content Creation'],
+    tags: ['Healthcare', 'Clinic', 'Social Media', 'Community Management', 'Wellness'],
+    description:
+      'Social media management for Clínica Conduzir, a health and wellness clinic. Developed content that communicated the clinic\'s services and values, built community engagement, and created a consistent digital presence reflecting the team\'s professionalism and care.',
+    coverImage: 'capaconduzir.jpeg',
+    images: ['capaconduzir.jpeg'],
+    videos: [],
+    instagramPosts: [
+      'https://www.instagram.com/p/C0ohubgumLE/',
+      'https://www.instagram.com/p/Cw0ySqovMVP/',
+      'https://www.instagram.com/p/C3LAYLdsj6B/',
+      'https://www.instagram.com/p/CzHzQihsjjb/',
+      'https://www.instagram.com/p/Cv4shECOz4K/',
+    ],
+    year: '2023',
   },
 
   // 23 ─── CLÍNICA AFETO ─────────────────────────────────────────────────────────
