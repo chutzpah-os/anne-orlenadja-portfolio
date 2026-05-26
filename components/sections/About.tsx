@@ -50,7 +50,7 @@ export default function About() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:sticky lg:top-8"
           >
-            <div className="relative overflow-hidden bg-surface rounded-[24px]" style={{ aspectRatio: '4/5' }}>
+            <div className="relative overflow-hidden bg-surface rounded-[24px]" style={{ aspectRatio: '4/5', maxHeight: 'min(520px, 65vh)' }}>
               <Image
                 src="/assets/institucionallll.jpg"
                 alt="Anne Orlenadja"

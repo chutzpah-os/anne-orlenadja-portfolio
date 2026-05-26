@@ -115,11 +115,11 @@ export default function Hero() {
               initial={{ opacity: 0, x: 20, rotate: 3 }}
               animate={{ opacity: 1, x: 0, rotate: 2 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.25 }}
-              className="lg:w-[38%] relative"
+              className="lg:w-[38%] relative w-[72%] sm:w-[55%] mx-auto lg:mx-0"
             >
               <div
                 className="relative overflow-hidden bg-surface"
-                style={{ borderRadius: '24px', aspectRatio: '4/5' }}
+                style={{ borderRadius: '24px', aspectRatio: '4/5', maxHeight: 'min(480px, 60vh)' }}
               >
                 <Image
                   src="/assets/anneorlenadja.png"
