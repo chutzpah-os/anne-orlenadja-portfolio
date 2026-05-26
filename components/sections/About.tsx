@@ -55,7 +55,7 @@ export default function About() {
                 src="/assets/institucionallll.jpg"
                 alt="Anne Orlenadja"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
