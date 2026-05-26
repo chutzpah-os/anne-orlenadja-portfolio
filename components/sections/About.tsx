@@ -50,7 +50,7 @@ export default function About() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:sticky lg:top-8"
           >
-            <div className="relative overflow-hidden bg-surface rounded-[24px]" style={{ aspectRatio: '4/5', maxHeight: 'min(520px, 65vh)' }}>
+            <div className="mx-auto lg:mx-0 w-[65%] sm:w-[55%] lg:w-full relative overflow-hidden bg-surface rounded-[24px]" style={{ aspectRatio: '4/5', maxHeight: 'min(520px, 65vh)' }}>
               <Image
                 src="/assets/institucionallll.jpg"
                 alt="Anne Orlenadja"
@@ -85,7 +85,7 @@ export default function About() {
           </motion.div>
 
           {/* Right: text */}
-          <div>
+          <div className="text-center lg:text-left">
             <AnimatedText
               text="Creative professional building authentic brand narratives."
               tag="h2"
@@ -110,7 +110,7 @@ export default function About() {
             </motion.div>
 
             {/* Skills */}
-            <motion.div {...fade(0.35)} className="mt-8 flex flex-wrap gap-2">
+            <motion.div {...fade(0.35)} className="mt-8 flex flex-wrap gap-2 justify-center lg:justify-start">
               {skills.map((skill) => (
                 <span
                   key={skill}
@@ -123,7 +123,7 @@ export default function About() {
             </motion.div>
 
             {/* Social links */}
-            <motion.div {...fade(0.5)} className="mt-8 flex flex-wrap gap-2 sm:gap-4">
+            <motion.div {...fade(0.5)} className="mt-8 flex flex-wrap gap-2 sm:gap-4 justify-center lg:justify-start">
               <a
                 href="https://instagram.com/anneorlenadja"
                 target="_blank"

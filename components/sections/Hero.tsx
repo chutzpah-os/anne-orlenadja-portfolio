@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 py-10">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 lg:gap-6">
             {/* Left: headline */}
-            <div className="lg:w-[55%]">
+            <div className="lg:w-[55%] text-center lg:text-left">
               {/* Headline — large editorial */}
               <div className="overflow-hidden mb-3">
                 <motion.h1
@@ -75,7 +75,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.9 }}
-                className="flex flex-col gap-4"
+                className="flex flex-col gap-4 items-center lg:items-start"
               >
                 <p className="text-muted text-lg font-medium" style={{ fontFamily: 'var(--font-cormorant)' }}>
                   Marketing & Branding Analyst

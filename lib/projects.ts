@@ -419,6 +419,156 @@ export const projects: Project[] = [
     year: '2019–2023',
   },
 
+  // 20 ─── COLO DE MÃE ───────────────────────────────────────────────────────────
+  {
+    slug: 'colo-de-mae',
+    title: 'Colo de Mãe — Nursery & School',
+    roles: ['Social Media', 'Filmmaking & Editing', 'Marketing & Growth'],
+    skills: ['Social Media Management', 'Video Production', 'Content Creation'],
+    tags: ['Education', 'Nursery', 'Social Media Management', 'Video Production', 'Community Management'],
+    description:
+      'Social media management, video production, and marketing strategy for Colo de Mãe, a nursery and early childhood school in Aracaju. Developed a warm, trust-building content strategy to connect with parents — showcasing the school\'s pedagogical approach, day-to-day moments, and milestone events. Produced Reels and feed content that humanized the institution and grew its organic community of families.',
+    coverImage: 'colodemae.jpeg',
+    images: ['colodemae.jpeg'],
+    videos: [],
+    instagramPosts: [
+      'https://www.instagram.com/p/CyS_5OmuTb9/',
+      'https://www.instagram.com/p/CxVd38YOWEH/',
+      'https://www.instagram.com/reel/CxeOTSbuNNQ/',
+      'https://www.instagram.com/p/CxtdV55OrTb/',
+      'https://www.instagram.com/reel/CwBiXHIMiML/',
+      'https://www.instagram.com/reel/CwWLS5sstgH/',
+      'https://www.instagram.com/reel/CvhbadJgWs-/',
+      'https://www.instagram.com/reel/CuzZzdYgHUb/',
+      'https://www.instagram.com/p/CurYNwROE9_/',
+      'https://www.instagram.com/p/Cuh_so3Ogl0/',
+      'https://www.instagram.com/reel/CuUknOegVI-/',
+      'https://www.instagram.com/p/CuPTwP6O2WA/',
+      'https://www.instagram.com/reel/Ct1iAopAIhY/',
+      'https://www.instagram.com/reel/CvsiEhUAN6m/',
+      'https://www.instagram.com/reel/CwQ_zVYMJAD/',
+    ],
+    year: '2023',
+  },
+
+  // 21 ─── DA HORTINHA ───────────────────────────────────────────────────────────
+  {
+    slug: 'da-hortinha',
+    title: 'Da Hortinha',
+    roles: ['Social Media', 'Filmmaking & Editing'],
+    skills: ['Social Media Management', 'Video Production', 'Content Creation'],
+    tags: ['Food', 'Organic', 'Social Media', 'Video Production', 'Reels'],
+    description:
+      'Social media and video content for Da Hortinha, a small organic produce brand. Produced short-form Reels that brought the garden-to-table story to life — capturing the freshness, care, and passion behind each harvest. The content strategy focused on authentic storytelling to build a loyal local following.',
+    coverImage: 'dahortinha.jpeg',
+    images: ['dahortinha.jpeg'],
+    videos: [],
+    instagramPosts: [
+      'https://www.instagram.com/reel/DMStc4esPb0/',
+      'https://www.instagram.com/reel/DMGv2mcMsjP/',
+    ],
+    year: '2024',
+  },
+
+  // 22 ─── DRA. RYANE VIEIRA ─────────────────────────────────────────────────────
+  {
+    slug: 'dra-ryane-vieira',
+    title: 'Dra. Ryane Vieira',
+    roles: ['Social Media', 'Filmmaking & Editing'],
+    skills: ['Social Media Management', 'Video Production', 'Content Creation'],
+    tags: ['Healthcare', 'Medical', 'Personal Branding', 'Reels', 'Social Media'],
+    description:
+      'Personal branding and social media strategy for Dr. Ryane Vieira, a medical professional building her digital authority. Produced Reels focused on health education, professional positioning, and patient trust-building — creating content that translated complex medical information into accessible, engaging short-form video.',
+    coverImage: 'ryane.jpeg',
+    images: ['ryane.jpeg'],
+    videos: [],
+    instagramPosts: [
+      'https://www.instagram.com/reel/C5Oh_2tuNFB/',
+      'https://www.instagram.com/reel/C4ZGiVwOlo2/',
+      'https://www.instagram.com/reel/C2AhAkRO2zD/',
+      'https://www.instagram.com/reel/C2xezj4ujQ8/',
+    ],
+    year: '2022–2024',
+  },
+
+  // 23 ─── CLÍNICA AFETO ─────────────────────────────────────────────────────────
+  {
+    slug: 'clinica-afeto',
+    title: 'Clínica Afeto',
+    roles: ['Social Media'],
+    skills: ['Social Media Management', 'Content Creation'],
+    tags: ['Healthcare', 'Clinic', 'Social Media', 'Community Management', 'Wellness'],
+    description:
+      'Social media management for Clínica Afeto, a health and wellness clinic. Developed content that communicated the clinic\'s humanized approach to patient care, promoted services, and built an online presence that reflected the warmth and professionalism of the team.',
+    coverImage: 'clinicaafeto.jpeg',
+    images: ['clinicaafeto.jpeg'],
+    videos: [],
+    instagramPosts: [
+      'https://www.instagram.com/p/C1h9ENHOzSo/',
+    ],
+    year: '2022–2023',
+  },
+
+  // 24 ─── PHONE+ ────────────────────────────────────────────────────────────────
+  {
+    slug: 'phone-plus',
+    title: 'Phone+',
+    roles: ['Social Media', 'Filmmaking & Editing', 'Marketing & Growth'],
+    skills: ['Social Media Management', 'Video Production', 'Content Creation', 'Campaign Strategy'],
+    tags: ['Technology', 'Retail', 'Social Media Management', 'Video Production', 'Campaign'],
+    description:
+      'Social media strategy, video production, and marketing campaigns for Phone+, a mobile phone retail store. Created content that showcased products, promotions, and the store\'s personality — driving both online engagement and in-store foot traffic through a mix of Reels, feed posts, and seasonal campaign activations.',
+    coverImage: 'iphonemais.jpeg',
+    images: ['iphonemais.jpeg'],
+    videos: [],
+    instagramPosts: [
+      'https://www.instagram.com/reel/Cg4ei8bgRsz/',
+      'https://www.instagram.com/p/Ch2MOMAuNVF/',
+      'https://www.instagram.com/reel/Chj-Vl_ANpz/',
+      'https://www.instagram.com/reel/Ci3OqpBJaxb/',
+    ],
+    year: '2022',
+  },
+
+  // 25 ─── DC STUDIO CRIATIVO ────────────────────────────────────────────────────
+  {
+    slug: 'dc-studio-criativo',
+    title: 'DC Studio Criativo',
+    roles: ['Social Media'],
+    skills: ['Social Media Management', 'Content Creation'],
+    tags: ['Creative Studio', 'Social Media', 'Content Creation', 'Brand Positioning'],
+    description:
+      'Social media management and content creation for DC Studio Criativo, a creative studio. Developed a consistent digital presence that reflected the studio\'s creative identity and showcased its portfolio across social media platforms — building brand recognition and engaging the local creative community.',
+    coverImage: 'DCStudioCriativo.jpeg',
+    images: ['DCStudioCriativo.jpeg'],
+    videos: [],
+    instagramPosts: [
+      'https://www.instagram.com/p/CZRvNGguzsh/',
+      'https://www.instagram.com/p/CWqdbl7Js_R/',
+      'https://www.instagram.com/p/CZj0k2_uOad/',
+      'https://www.instagram.com/p/CgPgt0AOtyn/',
+      'https://www.instagram.com/p/CcOHjbSuOB-/',
+      'https://www.instagram.com/p/CeEGizurX6j/',
+      'https://www.instagram.com/p/CkQxW7jraO4/',
+    ],
+    year: '2022',
+  },
+
+  // 26 ─── VISUALLY ──────────────────────────────────────────────────────────────
+  {
+    slug: 'visually',
+    title: 'Visually',
+    roles: ['Branding'],
+    skills: ['Brand Strategy'],
+    tags: ['Design', 'Visual Identity', 'Branding', 'Creative Direction', 'Typography'],
+    description:
+      'Brand design and visual identity work at Visually, a creative studio. Contributed to the development of visual identities, brand materials, and design projects — building deep skills in brand strategy, typography, and visual communication across diverse client projects.',
+    coverImage: 'visually.jpeg',
+    images: ['visually.jpeg'],
+    videos: [],
+    year: '2021–2023',
+  },
+
   // 19 ─── EDUCAÇÃO SERGIPE ──────────────────────────────────────────────────────
   {
     slug: 'educacao-sergipe',
