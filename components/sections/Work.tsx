@@ -7,21 +7,31 @@ import ProjectCard from '@/components/work/ProjectCard'
 import ProjectModal from '@/components/work/ProjectModal'
 import AnimatedText from '@/components/ui/AnimatedText'
 
-const categories = ['All', 'Campaigns', 'Branding', 'Content', 'Events', 'Institutional', 'Influencer Management', 'Volunteering'] as const
+const roles = ['All', 'Filmmaking & Editing', 'Social Media', 'Marketing & Growth', 'Branding', 'Influencer Management', 'Volunteering'] as const
+const skills = ['All', 'Video Production', 'Social Media Management', 'Content Creation', 'Brand Strategy', 'Event Coverage', 'Campaign Strategy', 'Copywriting'] as const
+
 const INITIAL_LIMIT = 3
 
 export default function Work() {
-  const [activeCategory, setActiveCategory] = useState<string>('All')
+  const [activeRole, setActiveRole] = useState<string>('All')
+  const [activeSkill, setActiveSkill] = useState<string>('All')
   const [activeProject, setActiveProject] = useState<Project | null>(null)
   const [expanded, setExpanded] = useState(false)
 
-  const filtered =
-    activeCategory === 'All'
-      ? projects
-      : projects.filter((p) => p.category === activeCategory)
+  const filtered = projects.filter((p) => {
+    const roleMatch = activeRole === 'All' || p.roles.includes(activeRole)
+    const skillMatch = activeSkill === 'All' || p.skills.includes(activeSkill)
+    return roleMatch && skillMatch
+  })
 
   const visible = expanded ? filtered : filtered.slice(0, INITIAL_LIMIT)
   const hasMore = filtered.length > INITIAL_LIMIT
+
+  function resetFilters(role: string, skill: string) {
+    setActiveRole(role)
+    setActiveSkill(skill)
+    setExpanded(false)
+  }
 
   return (
     <section id="work" className="bg-white py-20 sm:py-28">
@@ -46,20 +56,43 @@ export default function Work() {
               style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.01em', lineHeight: 1 }}
             />
           </div>
+        </div>
 
-          {/* Filter pills */}
+        {/* Role filter */}
+        <div className="mb-3">
+          <p className="font-tight text-xs text-muted mb-2 uppercase tracking-widest">Role</p>
           <div className="flex flex-wrap gap-2">
-            {categories.map((cat) => (
+            {roles.map((role) => (
               <button
-                key={cat}
-                onClick={() => { setActiveCategory(cat); setExpanded(false) }}
+                key={role}
+                onClick={() => resetFilters(role, activeSkill)}
                 className={`pill-btn text-sm transition-all duration-200 ${
-                  activeCategory === cat
+                  activeRole === role
                     ? 'bg-accent text-white'
                     : 'bg-surface text-black/60 hover:text-black hover:bg-black/8'
                 }`}
               >
-                {cat}
+                {role}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Skills filter */}
+        <div className="mb-8">
+          <p className="font-tight text-xs text-muted mb-2 uppercase tracking-widest">Skills</p>
+          <div className="flex flex-wrap gap-2">
+            {skills.map((skill) => (
+              <button
+                key={skill}
+                onClick={() => resetFilters(activeRole, skill)}
+                className={`pill-btn text-sm transition-all duration-200 ${
+                  activeSkill === skill
+                    ? 'bg-accent text-white'
+                    : 'bg-surface text-black/60 hover:text-black hover:bg-black/8'
+                }`}
+              >
+                {skill}
               </button>
             ))}
           </div>

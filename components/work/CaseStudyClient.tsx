@@ -24,7 +24,7 @@ export default function CaseStudyClient({ project }: { project: Project }) {
         <div className="absolute bottom-0 left-0 right-0 px-6 sm:px-10 pb-10 max-w-[1200px] mx-auto">
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <span className="font-tight text-xs text-white/60 font-medium tracking-widest uppercase block mb-3">
-              {project.category} · {project.year}
+              {project.roles[0]} · {project.year}
             </span>
             <h1
               className="font-tight font-bold text-white leading-tight"
@@ -52,8 +52,8 @@ export default function CaseStudyClient({ project }: { project: Project }) {
           <p className="font-tight text-base text-black/65 leading-relaxed font-medium">{project.description}</p>
           <div className="space-y-5">
             <div>
-              <p className="font-tight text-xs text-muted uppercase tracking-widest mb-1">Category</p>
-              <p className="font-tight text-sm text-black font-medium">{project.category}</p>
+              <p className="font-tight text-xs text-muted uppercase tracking-widest mb-1">Role</p>
+              <p className="font-tight text-sm text-black font-medium">{project.roles[0]}</p>
             </div>
             <div>
               <p className="font-tight text-xs text-muted uppercase tracking-widest mb-1">Year</p>

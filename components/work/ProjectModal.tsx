@@ -182,7 +182,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               <div className="flex items-start justify-between px-6 py-5 shrink-0 border-b border-black/8 bg-[#f5f5f5]">
                 <div className="pr-4">
                   <span className="font-tight text-[10px] text-muted font-medium tracking-widest uppercase block mb-1">
-                    {project.category} · {project.year}
+                    {project.roles[0]} · {project.year}
                   </span>
                   <h2
                     className="font-tight font-bold text-black leading-tight"

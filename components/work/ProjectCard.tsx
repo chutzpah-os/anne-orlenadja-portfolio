@@ -12,18 +12,19 @@ interface ProjectCardProps {
 
 const rotations = [-3, 4, -2, 5, -4, 3, -5, 2, -3, 4, -2, 5, -4, 3, -2]
 
-/* Gradient per category when there's no cover image */
-const categoryGradients: Record<string, string> = {
-  Campaigns:    'from-[#e8f0fe] to-[#c7d7fa]',
-  Branding:     'from-[#fdf2e9] to-[#f5d5b0]',
-  Content:      'from-[#eafaf1] to-[#b7e4c7]',
-  Events:       'from-[#fef9e7] to-[#f9e79f]',
-  Institutional:'from-[#f4f6f7] to-[#d5d8dc]',
+const roleGradients: Record<string, string> = {
+  'Filmmaking & Editing':  'from-[#f4eee8] to-[#e8d5c4]',
+  'Social Media':          'from-[#eaf4fb] to-[#c5e1f5]',
+  'Marketing & Growth':    'from-[#eafaf1] to-[#b7e4c7]',
+  'Branding':              'from-[#fdf2e9] to-[#f5d5b0]',
+  'Influencer Management': 'from-[#fdf0f8] to-[#f5c6e8]',
+  'Volunteering':          'from-[#f4f6f7] to-[#d5d8dc]',
 }
 
 export default function ProjectCard({ project, index, onClick }: ProjectCardProps) {
   const rot = rotations[index % rotations.length]
-  const gradient = categoryGradients[project.category] ?? 'from-surface to-black/8'
+  const primaryRole = project.roles[0] ?? ''
+  const gradient = roleGradients[primaryRole] ?? 'from-surface to-black/8'
 
   return (
     <motion.button
@@ -40,7 +41,7 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
           {/* Left: text info */}
           <div className="sm:w-1/2">
             <span className="font-cormorant text-sm text-muted font-medium block mb-2" style={{ fontFamily: 'var(--font-cormorant)' }}>
-              {project.category} · {project.year}
+              {project.roles[0]} · {project.year}
             </span>
             <h3
               className="font-cormorant font-bold text-black transition-colors duration-300 leading-tight"
@@ -80,7 +81,7 @@ export default function ProjectCard({ project, index, onClick }: ProjectCardProp
               ) : (
                 <div className={`w-full h-full bg-gradient-to-br ${gradient} flex items-end p-4`}>
                   <span className="font-tight text-xs font-medium text-black/40 uppercase tracking-widest">
-                    {project.category}
+                    {primaryRole}
                   </span>
                 </div>
               )}
