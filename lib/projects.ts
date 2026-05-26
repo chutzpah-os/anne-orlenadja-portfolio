@@ -49,7 +49,7 @@ export const projects: Project[] = [
       'https://www.instagram.com/p/DXg7bgyjsSm/',
       'https://www.instagram.com/p/DXXQrJtgj2k/',
     ],
-    year: '2022–2025',
+    year: '2024–2026',
   },
 
   // 2 ─── CASSE ──────────────────────────────────────────────────────────────────
@@ -73,7 +73,7 @@ export const projects: Project[] = [
       'https://www.instagram.com/p/DXhPSx2Do1W/',
       'https://www.instagram.com/p/DWuEon2DnDb/',
     ],
-    year: '2022–2025',
+    year: '2026',
   },
 
   // 3 ─── SHOPPING PREMIO ────────────────────────────────────────────────────────
@@ -95,7 +95,7 @@ export const projects: Project[] = [
       'https://www.instagram.com/shoppingpremio/reel/Cw0jGtBuB3g/',
       'https://www.instagram.com/shoppingpremio/reel/Cx3EVrpOTFQ/',
     ],
-    year: '2022–2023',
+    year: '2023–2024',
   },
 
   // 4 ─── SABOR NORDESTINO ───────────────────────────────────────────────────────
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     coverImage: 'sabornordestino.jpg',
     images: ['sabornordestino.jpg', 'sabornordestinoo.jpg'],
     videos: [],
-    year: '2022',
+    year: '2024',
   },
 
   // 5 ─── EXPOGLÓRIA ─────────────────────────────────────────────────────────────
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     instagramPosts: [
       'https://www.instagram.com/reels/DR2oBKikfhL/',
     ],
-    year: '2023–2024',
+    year: '2025',
   },
 
   // 8 ─── SHOPPING PRAIA SUL ─────────────────────────────────────────────────────
@@ -201,7 +201,7 @@ export const projects: Project[] = [
     instagramPosts: [
       'https://www.instagram.com/p/DRz77mfkeor/',
     ],
-    year: '2023',
+    year: '2026',
   },
 
   // 10 ─── VIALI ─────────────────────────────────────────────────────────────────
@@ -230,7 +230,7 @@ export const projects: Project[] = [
       'https://www.instagram.com/p/DIhnbb8sYXE/',
       'https://www.instagram.com/p/DISFEshs5AU/',
     ],
-    year: '2024',
+    year: '2025–2026',
   },
 
   // 11 ─── SONHO DOS PÉS ─────────────────────────────────────────────────────────
@@ -325,7 +325,7 @@ export const projects: Project[] = [
       'https://www.instagram.com/p/CqkvbRujaLL/',
       'https://www.instagram.com/p/Cmt3yxNJNti/',
     ],
-    year: '2022–2024',
+    year: '2020–2025',
   },
 
   // 15 ─── GOOGLE DEVELOPER GROUP ────────────────────────────────────────────────
@@ -344,7 +344,7 @@ export const projects: Project[] = [
       'https://www.instagram.com/p/C8hvSyKuuSg/',
       'https://www.instagram.com/p/C99zcP4JWh_/',
     ],
-    year: '2022',
+    year: '2024–2026',
   },
 
   // 16 ─── POLÍCIA MILITAR ───────────────────────────────────────────────────────
@@ -361,7 +361,7 @@ export const projects: Project[] = [
     instagramPosts: [
       'https://www.instagram.com/reels/DBvu_1aMdvc/',
     ],
-    year: '2021',
+    year: '2025',
   },
 
   // 17 ─── GRUPO GABILLAUD ───────────────────────────────────────────────────────
@@ -397,7 +397,7 @@ export const projects: Project[] = [
       'https://www.instagram.com/p/CwoGntdASaO/',
       'https://www.instagram.com/p/C6e4ynKOvX9/',
     ],
-    year: '2022',
+    year: '2019–2023',
   },
 
   // ─── EDUCAÇÃO SERGIPE ─────────────────────────────────────────────────────────
@@ -414,6 +414,6 @@ export const projects: Project[] = [
     instagramPosts: [
       'https://www.instagram.com/reels/DBqldLux5ek/',
     ],
-    year: '2021',
+    year: '2025',
   },
 ]
