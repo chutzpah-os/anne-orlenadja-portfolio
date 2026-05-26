@@ -7,7 +7,7 @@ import ProjectCard from '@/components/work/ProjectCard'
 import ProjectModal from '@/components/work/ProjectModal'
 import AnimatedText from '@/components/ui/AnimatedText'
 
-const categories = ['All', 'Campaigns', 'Branding', 'Content', 'Events', 'Institutional'] as const
+const categories = ['All', 'Campaigns', 'Branding', 'Content', 'Events', 'Institutional', 'Influencer Management', 'Volunteering'] as const
 const INITIAL_LIMIT = 3
 
 export default function Work() {
