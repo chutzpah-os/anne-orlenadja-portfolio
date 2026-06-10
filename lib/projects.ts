@@ -152,6 +152,31 @@ export const projects: Project[] = [
     year: '2025',
   },
 
+  // ─── ARRAIA DO POVO 2026 ──────────────────────────────────────────────────────
+  {
+    slug: 'arraia-do-povo-2026',
+    title: 'Arraia do Povo 2026',
+    roles: ['Filmmaking & Editing'],
+    skills: ['Video Production', 'Event Coverage', 'Content Creation'],
+    tags: ['Festival', 'June Festival', 'Event Coverage', 'Video Production', 'Live Coverage', 'Government Event'],
+    description:
+      'Media production and social media coverage for Arraia do Povo 2026, one of the largest June festival events in Sergipe — promoted by the Government of Sergipe. Responsible for video production, photography, editing, and real-time content delivery across social media platforms. The work captured the vibrant energy of forró, quadrilha, and northeastern cultural traditions, extending the festival\'s reach to audiences across the state and beyond.',
+    coverImage: 'arraiadopovo20261.jpeg',
+    images: ['arraiadopovo20261.jpeg', 'arraiadopovo20262.jpeg', 'arraiadopovo20263.jpeg'],
+    videos: [],
+    instagramPosts: [
+      'https://www.instagram.com/reel/DZVMEfHjWxU/',
+      'https://www.instagram.com/reel/DZNL7nhO7vX/',
+      'https://www.instagram.com/reel/DZIn9tPhoEH/',
+      'https://www.instagram.com/reel/DZC0Va_jbvC/',
+      'https://www.instagram.com/reel/DZBY4i0Nd-_/',
+      'https://www.instagram.com/reel/DZAyIxDRrwP/',
+      'https://www.instagram.com/reel/DY-D0Gwub_g/',
+      'https://www.instagram.com/reel/DY5Dlh_xveR/',
+    ],
+    year: '2026',
+  },
+
   // 7 ─── PRÉ-CAJU ───────────────────────────────────────────────────────────────
   {
     slug: 'pre-caju',
@@ -298,6 +323,7 @@ export const projects: Project[] = [
     images: ['ugc.png'],
     videos: [],
     instagramPosts: [
+      'https://www.instagram.com/reel/DYKAtsxOVa5/',
       'https://www.instagram.com/reels/DRezuO2jSAd/',
       'https://www.instagram.com/reels/DOeY9OegXfu/',
       'https://www.instagram.com/p/DYyRjaaTxzt/',
