@@ -104,7 +104,7 @@ export default function YouTubeCarousel() {
               letterSpacing: '-0.01em',
             }}
           >
-            Watch my work
+            Get to know me better
           </motion.h3>
         </div>
 
