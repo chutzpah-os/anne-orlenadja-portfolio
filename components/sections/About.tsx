@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import AnimatedText from '@/components/ui/AnimatedText'
+import YouTubeCarousel from '@/components/ui/YouTubeCarousel'
 
 const skills = [
   'Social Media Management',
@@ -146,6 +147,9 @@ export default function About() {
                 YouTube ↗
               </a>
             </motion.div>
+
+            {/* YouTube carousel */}
+            <YouTubeCarousel />
           </div>
         </div>
       </div>

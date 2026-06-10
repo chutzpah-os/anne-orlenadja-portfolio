@@ -49,6 +49,11 @@ section[id] {
 ::-webkit-scrollbar {
   width: 4px;
 }
+
+/* Hide scrollbar on carousel */
+.yt-carousel-track::-webkit-scrollbar {
+  display: none;
+}
 ::-webkit-scrollbar-track {
   background: #f5f5f5;
 }
