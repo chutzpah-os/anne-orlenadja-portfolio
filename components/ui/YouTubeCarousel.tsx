@@ -36,7 +36,7 @@ function VideoCard({ id, index }: { id: string; index: number }) {
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: index * 0.07 }}
       className="shrink-0 rounded-[16px] overflow-hidden bg-[#f0ede8]"
       style={{
-        width: 'clamp(272px, 44vw, 372px)',
+        width: 'clamp(220px, 74vw, 372px)',
         scrollSnapAlign: 'start',
         boxShadow: '0 4px 24px rgba(0,0,0,0.07)',
       }}
@@ -72,13 +72,13 @@ export default function YouTubeCarousel() {
   const scroll = useCallback((dir: 'prev' | 'next') => {
     if (!trackRef.current) return
     trackRef.current.scrollBy({
-      left: dir === 'next' ? 400 : -400,
+      left: dir === 'next' ? 340 : -340,
       behavior: 'smooth',
     })
   }, [])
 
   return (
-    <div className="mt-16 sm:mt-20">
+    <div className="mt-12 sm:mt-16">
       {/* Header */}
       <div className="flex items-end justify-between mb-7">
         <div>
@@ -153,7 +153,7 @@ export default function YouTubeCarousel() {
       {/* Carousel track */}
       <div
         ref={trackRef}
-        className="yt-carousel-track flex gap-4 overflow-x-auto pb-2"
+        className="yt-carousel-track flex gap-3 sm:gap-4 overflow-x-auto pb-2"
         style={{
           scrollSnapType: 'x mandatory',
           scrollbarWidth: 'none',

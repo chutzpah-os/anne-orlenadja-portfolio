@@ -51,7 +51,7 @@ export default function About() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="lg:sticky lg:top-8"
           >
-            <div className="mx-auto lg:mx-0 w-[65%] sm:w-[55%] lg:w-full relative overflow-hidden bg-surface rounded-[24px]" style={{ aspectRatio: '4/5', maxHeight: 'min(520px, 65vh)' }}>
+            <div className="mx-auto lg:mx-0 w-[46%] sm:w-[40%] lg:w-full relative overflow-hidden bg-surface rounded-[24px]" style={{ aspectRatio: '4/5', maxHeight: 'min(440px, 58vh)' }}>
               <Image
                 src="/assets/institucionallll.jpg"
                 alt="Anne Orlenadja"
@@ -148,10 +148,11 @@ export default function About() {
               </a>
             </motion.div>
 
-            {/* YouTube carousel */}
-            <YouTubeCarousel />
           </div>
         </div>
+
+        {/* YouTube carousel — full-width below grid */}
+        <YouTubeCarousel />
       </div>
     </section>
   )
