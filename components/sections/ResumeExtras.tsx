@@ -18,7 +18,7 @@ const courses = [
 const languages = [
   { lang: 'Portuguese', level: 'Native', dots: 5 },
   { lang: 'English', level: 'Intermediate', dots: 3 },
-  { lang: 'Spanish', level: 'Intermediate', dots: 4 },
+  { lang: 'Spanish', level: 'Upper-Intermediate', dots: 4 },
 ]
 
 const fade = (delay = 0) => ({
