@@ -47,35 +47,62 @@ export default function ResumeExtras() {
 
           <motion.div
             {...fade(0.16)}
-            className="relative pl-6 sm:pl-10"
+            className="relative pl-6 sm:pl-10 flex flex-col gap-6"
           >
             {/* Terracotta timeline line */}
             <span
               className="absolute left-0 top-0 bottom-0 w-[2px] rounded-full"
               style={{ backgroundColor: '#D4775A' }}
             />
-            {/* Dot */}
-            <span
-              className="absolute left-[-5px] top-2 w-3 h-3 rounded-full border-2 bg-white"
-              style={{ borderColor: '#D4775A' }}
-            />
 
-            <div className="bg-[#f5f5f5] rounded-[20px] sm:rounded-[24px] p-6 sm:p-10 max-w-2xl">
-              <p
-                className="font-tight text-xs uppercase tracking-[0.18em] mb-3"
-                style={{ color: '#D4775A' }}
-              >
-                2021 – 2025
-              </p>
-              <h3
-                className="font-cormorant font-bold text-black leading-tight mb-2"
-                style={{ fontSize: 'clamp(1.4rem, 3vw, 2rem)', letterSpacing: '-0.01em' }}
-              >
-                Advertising &amp; Public Relations
-              </h3>
-              <p className="font-tight text-sm text-black/55 font-medium tracking-wide">
-                Estácio University
-              </p>
+            {/* Entry 1 — Master */}
+            <div className="relative">
+              <span
+                className="absolute left-[-29px] sm:left-[-45px] top-2 w-3 h-3 rounded-full border-2 bg-white"
+                style={{ borderColor: '#D4775A' }}
+              />
+              <div className="bg-[#f5f5f5] rounded-[20px] sm:rounded-[24px] p-6 sm:p-10 max-w-2xl">
+                <p
+                  className="font-tight text-xs uppercase tracking-[0.18em] mb-3"
+                  style={{ color: '#D4775A' }}
+                >
+                  Sep 2026 – Present
+                </p>
+                <h3
+                  className="font-cormorant font-bold text-black leading-tight mb-2"
+                  style={{ fontSize: 'clamp(1.4rem, 3vw, 2rem)', letterSpacing: '-0.01em' }}
+                >
+                  Master in Cinematographic Direction
+                </h3>
+                <p className="font-tight text-sm text-black/55 font-medium tracking-wide">
+                  ESCAC — Escola Superior de Cinema i Audiovisuals de Catalunya
+                </p>
+              </div>
+            </div>
+
+            {/* Entry 2 — Bachelor */}
+            <div className="relative">
+              <span
+                className="absolute left-[-29px] sm:left-[-45px] top-2 w-3 h-3 rounded-full border-2 bg-white"
+                style={{ borderColor: '#D4775A' }}
+              />
+              <div className="bg-[#f5f5f5] rounded-[20px] sm:rounded-[24px] p-6 sm:p-10 max-w-2xl">
+                <p
+                  className="font-tight text-xs uppercase tracking-[0.18em] mb-3"
+                  style={{ color: '#D4775A' }}
+                >
+                  2021 – 2025
+                </p>
+                <h3
+                  className="font-cormorant font-bold text-black leading-tight mb-2"
+                  style={{ fontSize: 'clamp(1.4rem, 3vw, 2rem)', letterSpacing: '-0.01em' }}
+                >
+                  Advertising &amp; Public Relations
+                </h3>
+                <p className="font-tight text-sm text-black/55 font-medium tracking-wide">
+                  Estácio University
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
